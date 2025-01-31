@@ -1,5 +1,5 @@
 from aiogram import Dispatcher, Bot
-from bot.handlers import router
+from handlers import router
 from dotenv import load_dotenv
 from data.database import Base, engine
 import asyncio
