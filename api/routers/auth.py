@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 import os
 import requests
 from dotenv import load_dotenv
-from api.routers.key_gen import generate_token
+from routers.key_gen import generate_token
 import hashlib
 import os
 import json
