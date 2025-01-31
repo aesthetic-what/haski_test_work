@@ -1,0 +1,21 @@
+services:
+  bot:
+    build:
+      context: ./bot
+    environment:
+      - TELEGRAM_TOKEN=7429942015:AAHhCsWHuYHnPO1B6ocdtoYnhng5BwRI0j0
+      - API_URL=http://127.0.0.1:8000/api/check-imei
+      - LOGIN_URL=http://127.0.0.1:8000/auth
+      - IMEI_TOKEN=e4oEaZY1Kom5OXzybETkMlwjOCy3i8GSCGTHzWrhd4dc563b
+      - IMEI_URL=https://api.imeicheck.net/v1/checks
+
+
+  api:
+    build:
+      context: ./api
+    environment:
+      - TELEGRAM_TOKEN=7429942015:AAHhCsWHuYHnPO1B6ocdtoYnhng5BwRI0j0
+      - API_URL=http://127.0.0.1:8000/api/check-imei
+      - LOGIN_URL=http://127.0.0.1:8000/auth
+      - IMEI_TOKEN=e4oEaZY1Kom5OXzybETkMlwjOCy3i8GSCGTHzWrhd4dc563b
+      - IMEI_URL=https://api.imeicheck.net/v1/checks
