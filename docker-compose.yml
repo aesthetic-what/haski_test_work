@@ -19,3 +19,5 @@ services:
       - LOGIN_URL=http://127.0.0.1:8000/auth
       - IMEI_TOKEN=e4oEaZY1Kom5OXzybETkMlwjOCy3i8GSCGTHzWrhd4dc563b
       - IMEI_URL=https://api.imeicheck.net/v1/checks
+    ports:
+      - "8000:8000"
